@@ -1,0 +1,6 @@
+title: Mak Kolybabi
+baseurl: "/"
+url: "http://mogigoma.com"
+
+markdown: kramdown
+permalink: pretty

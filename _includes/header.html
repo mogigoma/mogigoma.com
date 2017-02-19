@@ -1,0 +1,37 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% if page.permalink == '/' %}<meta name="google-site-verification" content="V2LPiTbXzxUQE7gxA8jqUzcBNJ4Mod05OI-o0dy9y-I" />{% endif %}
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/feed.xml" | prepend: site.blogurl }}" />
+
+  <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "css/bootstrap-responsive.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "css/darkstrap.min.css" | prepend: site.baseurl }}">
+
+  <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    .post-meta {
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+  </style>
+
+  <script src="{{ "js/modernizr-2.6.2-respond-1.1.0.min.js" | prepend: site.baseurl }}"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-46625692-1', 'mogigoma.com');
+    ga('send', 'pageview');
+  </script>
+</head>
